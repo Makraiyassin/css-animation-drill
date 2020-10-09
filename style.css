@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@keyframes droite {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 480px;
+    top: 0;
+  }
+}
+@keyframes bas {
+  0% {
+    left: 480px;
+    top: 0;
+  }
+  100% {
+    left: 480px;
+    top: 125px;
+  }
+}
+@keyframes gauche {
+  0% {
+    left: 480px;
+    top: 125;
+  }
+  100% {
+    transform: rotate(45deg);
+    left: 215px;
+    top: 125;
+  }
+}
+@keyframes gauche2 {
+  0% {
+    left: 215px;
+    top: 125;
+  }
+  100% {
+    left: 0;
+    top: 125;
+    transform: rotate(90deg);
+    border: 1px dashed #0900BD;
+  }
+}
+@keyframes bas2 {
+  0% {
+    left: 0;
+    top: 125;
+  }
+  100% {
+    left: 420px;
+    top: 420px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fad860 20%, #f9a742 55%, #f8842c 100%);
+  }
+}
+.box {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-color: #f3eded;
+}
+.box .bord {
+  width: 585px;
+  height: 585px;
+  margin: 5px;
+  position: absolute;
+  border: 2px dashed #c9c9c9;
+}
+.box .bord .carré {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  border: 1px dashed #ff0000;
+  position: absolute;
+  animation: 5s droite 0s forwards, 2s bas 5s forwards, 0.5s gauche 7s forwards, 2.5s gauche2 9.5s forwards, 5s bas2 12s forwards;
+}
+
+/*# sourceMappingURL=style.css.map */
