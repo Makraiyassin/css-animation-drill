@@ -1,22 +1,23 @@
 
+
 @keyframes droite {
     0%  { left: 0; top: 0;}
     100%{ left: 480px; top: 0;}
 }
 @keyframes bas {
     0%  { left: 480px; top: 0;}
-    100%{ left: 480px; top: 125px;}
+    100%{ left: 480px; top: 180px;}
 }
 @keyframes gauche {
-    0%  { left: 480px; top: 125;}
-    100%{ transform: rotate(45deg); left: 215px; top: 125;}
+    0%  { left: 480px; top: 180px;}
+    100%{ transform: rotate(45deg); left: 215px; top: 180px;}
 }
 @keyframes gauche2 {
-    0%  { left: 215px; top: 125;}
-    100%{ left: 0; top: 125; transform: rotate(90deg); border: 1px dashed #0900BD}
+    0%  { left: 215px; top: 180px;}
+    100%{ left: 0; top: 180px; transform: rotate(90deg); border: 1px dashed #0900BD}
 }
 @keyframes bas2 {
-    0%  { left: 0; top: 125;}
+    0%  { left: 0; top: 180px;}
     100%{ 
         left: 420px; 
         top: 420px; 
@@ -28,20 +29,19 @@
     }
 }
 
-// transform: border(1px dashed #0900BD) ;
-#hero{
+#anim{
     width: 600px;
     height: 600px;
     margin: auto;
     background-color: #f3eded;
-    .bord{
+    #stage{
         width: 585px;
         height: 585px;
         margin: 5px;
         position: absolute;
         border: 2px dashed #c9c9c9;
         
-        .carré{
+        #hero{
             width: 75px;
             height: 75px;
             margin: 10px;
